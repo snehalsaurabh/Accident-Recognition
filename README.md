@@ -19,3 +19,11 @@ You can run automate.py to run the above command automatically. Just run the fol
 python automate.py
 ```
 simply change the address of the image in the automate.py file.
+
+## Way 3
+
+You can run the following command to run the above command automatically:
+```bash
+python automate.py "path_to_image"
+```
+you don't have to put the image path in the automate.py file. Just pass it as an argument. Don't forget to put the image in the assets folder. Use quotes if the path has spaces.
