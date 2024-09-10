@@ -1,4 +1,4 @@
-Paste best.pt into the following location: yolov9/runs/train/exp3/weights/best.pt
+Paste 'best.pt' into the following location: yolov9/runs/train/exp3/weights/best.pt
 
 Run this command:
 ```bash
