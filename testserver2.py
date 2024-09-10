@@ -1,5 +1,3 @@
-# It shows full response and not JSON response
-
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
 import subprocess
@@ -34,6 +32,7 @@ def run_detection(image_path: str) -> Optional[str]:
             match = re.search(r'Detected class:\s*(\w+)', line)
             if match:
                 detected_class = match.group(1)
+                break  # No need to read further lines
 
     # Capture and print stderr for debugging
     for err in process.stderr:

@@ -8,7 +8,7 @@ yolov9_directory = 'D:\\MachineLearning\\Suraksha\\AccidentDetection\\yolov9'  #
 
 # Define the command
 findclass_command = [
-    venv_python, 'findclass.py',  # Use the virtual environment Python executable
+    venv_python, 'severity.py',  # Use the virtual environment Python executable
     '--imgsz', '1280',
     '--conf-thres', '0.1',
     '--device', 'cpu',

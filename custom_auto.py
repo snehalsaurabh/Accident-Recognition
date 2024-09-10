@@ -20,7 +20,7 @@ def main(image_path):
 
     # Define the command with the custom image path
     findclass_command = [
-        venv_python, 'findclass.py',  # Use the virtual environment Python executable
+        venv_python, 'severity.py',  # Use the virtual environment Python executable
         '--imgsz', '1280',
         '--conf-thres', '0.1',
         '--device', 'cpu',

@@ -1,4 +1,4 @@
-# Description: A simple FastAPI server that accepts image uploads and runs a custom detection script on them. It gives JSON responses with the detected class.
+# Description: A simple FastAPI server that accepts image uploads and runs a custom detection script on them. 
 
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
