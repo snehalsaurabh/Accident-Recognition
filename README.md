@@ -2,6 +2,22 @@ Download the weights 'best.pt' from the following link: https://drive.google.com
 
 Paste 'best.pt' into the following location: yolov9/runs/train/exp3/weights/best.pt
 
+How to run the model.
+
+1. Make a virtual environment.
+```bash
+python -m venv venv
+```
+2. Activate the virtual environment.
+```bash
+.\venv\Scripts\activate
+```
+3. Install the requirements. Come back to the main directory and run the following command.
+```bash
+pip install -r requirements.txt
+```
+4. Run the model using the given below commands.
+
 ## Way 1
 
 Run this command:
@@ -27,3 +43,4 @@ You can run the following command to run the above command automatically:
 python automate.py "path_to_image"
 ```
 you don't have to put the image path in the automate.py file. Just pass it as an argument. Don't forget to put the image in the assets folder. Use quotes if the path has spaces.
+
