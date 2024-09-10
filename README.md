@@ -1,3 +1,5 @@
+Download the weights 'best.pt' from the following link: https://drive.google.com/drive/folders/1VL3vKJF8Z77deqPKGr3ocCZ2DnBrKR0P?usp=drive_link
+
 Paste 'best.pt' into the following location: yolov9/runs/train/exp3/weights/best.pt
 
 Run this command:
