@@ -18,6 +18,21 @@ pip install -r requirements.txt
 ```
 4. Run the model using the given below commands.
 
+## Best way to run the model
+a. You can use postman now with the recent changes made to testserver2.py. You can run the following command to start the server.
+```bash
+uvicorn testserver2:app --reload
+```
+to run server.
+
+Most likely, it will be working on http://127.0.0.1:8000/upload/
+
+b. Now, open postman and send a POST request to the above address with the image as a form-data in the body section. The key should be 'file' and the value should be the image. The image should be in the assets folder. You can use crash.jpeg as an example.
+
+c. You will get the respone in the form of JSON. The JSON will contain the class of the object detected and the confidence of the detection.
+
+Please note that if it is not working, you will have to fix the path of the python.exe file in the code of custom_auto and automate.py. It is hard coded to my virtual environment currently. Set it to your virtual environment in the same way that I have done.
+
 ## Way 1
 
 Run this command:
