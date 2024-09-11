@@ -126,7 +126,7 @@ def run(
     if class_counter:
         most_common_class, _ = class_counter.most_common(1)[0]
     else:
-        most_common_class = "No accident"
+        most_common_class = "No_accident"
 
     # Print detected classes
     LOGGER.info(f"Detected class: {most_common_class}")
