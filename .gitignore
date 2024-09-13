@@ -5,4 +5,6 @@ venv/
 venv
 yolov9/runs/train/exp3/weights/best.pt
 yolov9/runs/train/exp3/weights/last.pt
-_pycache_/
+_pycache__
+__pycache__/
+uploads/
