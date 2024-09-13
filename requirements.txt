@@ -48,3 +48,13 @@ pycocotools>=2.0
 fastapi
 uvicorn
 python-multipart
+python-dotenv
+google-ai-generativelanguage
+google-api-core
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-generativeai
+googleapis-common-protos
+google-cloud-speech
+google-cloud-texttospeech
