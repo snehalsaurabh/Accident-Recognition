@@ -9,11 +9,13 @@ def resolve_path(relative_path):
 
 def main(image_path):
     # Define the virtual environment path and the yolov9 directory
-    venv_python = 'D:\\MachineLearning\\Suraksha\\AccidentDetection\\venv\\Scripts\\python.exe'
-    yolov9_directory = 'D:\\MachineLearning\\Suraksha\\AccidentDetection\\yolov9'  # Correct Windows path format
+    venv_python_1 = 'venv\\Scripts\\python.exe'
+    yolov9_directory_1 = 'yolov9'  # Correct Windows path format
 
     # Resolve the image path to an absolute path
     absolute_image_path = resolve_path(image_path)
+    venv_python = resolve_path(venv_python_1)
+    yolov9_directory = resolve_path(yolov9_directory_1)
 
     # Print the image path and command for debugging
     print(f"Using image path: {absolute_image_path}")
