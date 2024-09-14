@@ -1,5 +1,7 @@
+# Combined Functionality of both the models
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
+from pydantic import BaseModel
 import os
 import base64
 from io import BytesIO
@@ -67,11 +69,14 @@ def run_detection(image_path: str) -> Optional[str]:
 
     return detected_class
 
-@app.post("/upload/{image_url:path}")
-async def upload_image(image_url: str):
+class ImageURL(BaseModel):
+    url: str
+
+@app.post("/upload/")
+async def upload_image(image_url: ImageURL):
     # Download the image from the URL
     try:
-        response = requests.get(image_url)
+        response = requests.get(image_url.url)
         response.raise_for_status()
     except requests.RequestException as e:
         raise HTTPException(status_code=400, detail=f"Error downloading image: {e}")
@@ -126,4 +131,4 @@ async def upload_image(image_url: str):
 
 @app.get("/")
 def read_root():
-    return {"message": "Upload an image URL using POST /upload/{image_url}"}
+    return {"message": "Upload an image URL using POST /upload/"}
